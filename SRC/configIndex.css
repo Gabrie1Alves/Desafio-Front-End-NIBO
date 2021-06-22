@@ -1,0 +1,256 @@
+/*Definindo e centralizado o body e redimensionando*/
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    resize: both;
+}
+
+
+/*Definindo as caracteristicas dos paragrafos*/
+p{
+    font-family: Calibri Light;
+    font-size: 15.5px;
+    color: #61686A;
+    padding-left: 30px;
+}
+
+
+/*Mudando a fonte, tamanho e desabilitando a decoração de texto da função 'a'*/
+a{
+    font-family: Calibri Light;
+    font-size: 13px;
+    color: DeepSkyBlue;
+    text-decoration: none; 
+}
+a.decoracaoDeTexto:hover{
+    text-decoration: underline;
+}
+
+/*classe utilizada para aumentar a fonte e mudar a cor de um texto*/
+.SemDecoracao{ 
+    font-family: Calibri Light;
+    font-size: 15.5px;
+    color: #313336;
+}
+a.SemDecoracao:hover{
+    color: black;
+}
+
+
+
+/*Container criado para centralizar a pagina e redimensionando*/
+.container {
+    width: 50%;
+    height: 100%;
+    background: #F0F0F0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+}
+
+
+/*Corpo utilizado para definir o tamanho e largura onde praticamente todos os elemetos ficaram localizados*/
+.corpo{
+    width: 100%;
+    height: 100%;
+    margin:2% 5%;
+    background-color: #FFFFFF;
+}
+
+
+/* .nibo utilizado para vizualização do logo Nibo*/
+.nibo{
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+}
+
+
+/*.countDown utlizado para definir a posição, largura e tamnho do local que vai conter a imagem 'Black Friday', 
+'Live gratuita', o 'CountDown' e um texto */
+.countdown{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    resize: vertical;
+}
+
+
+/*.dentroCountImg utilizado para definir a posição da imagem 'Live gratuita' dentro da 
+imagem 'Black Friday'*/
+.dentroCountImg{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5%;
+    top: 10%;
+
+}
+
+
+/*.dentroCountText utilizado para definir e centralizar o texto 'Muito desconto e conteúdo de BPO Financeiro' 
+dentro da imagem 'Black Friday'*/
+.dentroCountText{
+    display: block;
+    position:absolute;
+    width: 100%;
+    height: 17%;
+    top:12%;
+}
+
+
+/*.pCountDown utilizado para aumentar e mudar a cor do texto 'Muito desconto e conteúdo de BPO Financeiro'*/
+.pCountDonw{
+    font-size: 25px;
+    color: white;
+}
+
+
+/*.dentroCountDown utilizado para definir e centralizar o 'CountDown' dentro da imagem 'Black Friday'*/
+.dentroCountDown{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5%;
+    top: 70%;
+}
+
+
+/* .agenda define o espaço, cores e outros detalhes de informações da pagina html como a data do evento*/
+.agenda{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 22%;
+    padding-left: 5%;
+    background-color: #F0F0F0;
+
+}
+
+.agendaText{
+    width: 80%;
+    border-left: 5px solid #FFC200;
+    border-radius: 5px;
+}
+
+
+/*A classe .button foi utilizada para implementar um botão amarelo 'quero participar', centralizar, arredondar as bordas...*/
+.button{
+    display: flex;
+    background-color: #FFC200; 
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.button:hover{
+    background-color: #f8c418;
+    border: 1px solid black;
+    color: black;
+}
+.centerButton{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+
+/*a classe .rodape define o tamnho e cor do rodapé e também uma ligeira sombra na parte de baixo do rodapé*/
+.rodape{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    position: relative;
+    text-align: center;
+    background-color: #313336;
+    border:solid 0px;
+    box-shadow: 1px 2px 5px #313336;
+
+}
+
+
+/*a classe .logosSociais definie a posição das logos das redes sociais*/
+.logosSociais{
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+}
+.logo{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+img.logo1:hover{
+    background-color: #1E90FF;
+    border-radius: 50%;
+}
+img.logo2:hover{
+    background-color: blue;
+    border-radius: 50%;
+}
+
+img.logo3:hover{
+    background-color: red;
+    border-radius: 50%;
+}
+img.logo4:hover{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    border-radius: 50%;
+}
+/*A classe cancel define a parte inferior ao rodapé, posição, cores...*/
+.cancel{
+    display: flex;
+    background-color:#F0F0F0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+}
+
+
+/*.cancelarInsc foi utilizado para deixar a parte clicavel do texto azul, já que foi desabilitado na função 'a'*/
+.cancelarInsc{
+    width: 90%;
+    height: 100%;
+    font-family: Calibri Light;
+    font-size: 13px;
+    color: #61686A;
+}
+
+/*Responsividade*/
+@media(max-width: 1024px){
+    .container{
+        width: 90%;
+    }
+}
+@media(max-width: 550px){
+    .container{
+        width: 90%;
+    }
+    .countdown{
+        display: none;
+    }
+
+}
+
+/*---------- Pagina de erro incrementos ---------------*/
+.pErro{
+    font-size: 40px;
+}
